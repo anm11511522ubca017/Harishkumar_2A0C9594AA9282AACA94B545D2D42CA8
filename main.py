@@ -1,12 +1,12 @@
-#1.1 impliment a recursive function to calculate the factorial of the given number.
+# Python program to check if year is a leap year or not
 
-def fact_rec(n):
-  if n==0 or n==1:
-    return 1
-  else:
-    return n*fact_rec(n-1)
+year = 2000
 
-number = 2
-res = fact_rec(number)
+if (year % 400 == 0) and (year % 100 == 0):
+    print("{0} is a leap year".format(year))
 
-print("the factorial of {} is {} ".format (number,res))
+elif (year % 4 ==0) and (year % 100 != 0):
+    print("{0} is a leap year".format(year))
+  
+else:
+    print("{0} is not a leap year".format(year))
